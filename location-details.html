@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียดสถานที่ | วิทยาลัยเทคนิคนางรอง</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-section {
+            border-bottom: 3px solid #d63384;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-mini {
+            width: 70px;
+            height: 70px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-mini img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        h1 {
+            color: #d63384;
+            font-size: 26px;
+        }
+
+        .sub-title {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .detail-card {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .detail-card {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .detail-card.reverse {
+            direction: rtl;
+        }
+
+        .detail-card.reverse > * {
+            direction: ltr;
+        }
+
+        .detail-img-container {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .detail-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .detail-img-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .detail-content {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .detail-title {
+            color: #b8226e;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .detail-desc {
+            color: #4a5568;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .detail-features {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .detail-features li {
+            font-size: 13px;
+            color: #718096;
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 18px;
+        }
+
+        .detail-features li::before {
+            content: "✔";
+            color: #d63384;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 25px;
+            background-color: #e2e8f0;
+            color: #4a5568;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background-color: #cbd5e0;
+            color: #2d3748;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 12px;
+            color: #aaa;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!-- แถบหัวข้อ -->
+        <div class="header-section">
+            <div class="logo-mini">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_nR5vBBsTgKDXU-VNLayUCcW9TztNtQp5z2lFX4YnVeroA=s900-c-k-c0x00ffffff-no-rj" alt="โลโก้วิทยาลัยเทคนิคนางรอง">
+            </div>
+            <div>
+                <h1>รายละเอียดสถานที่สำคัญ</h1>
+                <div class="sub-title">วิทยาลัยเทคนิคนางรอง | ข้อมูลเชิงลึกของอาคารและจุดบริการต่างๆ</div>
+            </div>
+        </div>
+
+        <!-- รายละเอียดสถานที่ 1: อาคารอำนวยการ -->
+        <div class="detail-card">
+            <div class="detail-img-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwg0DVNEhtQpG1xi8JVmGXbgPSbaHSnzsoGKjodXQdxQ&s=10" alt="อาคารอำนวยการ">
+            </div>
+            <div class="detail-content">
+                <div class="detail-title">📌 อาคารอำนวยการ</div>
+                <div class="detail-desc">ศูนย์กลางการบริหารจัดการและงานบริการด้านการศึกษาของวิทยาลัย ให้บริการติดต่อประสานงานทั่วไป</div>
+                <ul class="detail-features">
+                    <li>งานทะเบียนและวัดผลนักศึกษา</li>
+                    <li>งานการเงินและบัญชี</li>
+                    <li>สำนักงานผู้อำนวยการและฝ่ายบริหาร</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- รายละเอียดสถานที่ 2: อาคารปฏิบัติการช่างอุตสาหกรรม (สลับฝั่ง) -->
+        <div class="detail-card reverse">
+            <div class="detail-img-container">
+                <img src="https://scontent.fnak4-1.fna.fbcdn.net/v/t39.30808-6/651172070_1245967631071248_3697014624423831534_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1536&ctp=s2048x1536&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Nf0rDHHNW-cQ7kNvwHGDtGu&_nc_oc=Ado0bNLM3oQmiZkzpDXelyjPrwiVl_WBWJ57scNSeyTZFLRZFJkyQ7oFr5TOoMcNHG_h02uG6Kdfa87gTjQuMOPm&_nc_zt=23&_nc_ht=scontent.fnak4-1.fna&_nc_gid=9Ud5x6HafiJLLu5CqIVyAQ&_nc_ss=7b2a8&oh=00_AQRbnFZJvcCf0ddnGDMTNtm6z2bi91Wy1O2Abm4jUufO1Q&oe=6AEF2955" alt="อาคารปฏิบัติการช่างอุตสาหกรรม">
+            </div>
+            <div class="detail-content">
+                <div class="detail-title">⚙️ อาคารปฏิบัติการช่างอุตสาหกรรม</div>
+                <div class="detail-desc">อาคารและโรงงานฝึกฝนทักษะวิชาชีพเฉพาะทาง เพียบพร้อมด้วยเครื่องมือและเครื่องจักรที่ได้มาตรฐานอุตสาหกรรม</div>
+                <ul class="detail-features">
+                    <li>ห้องปฏิบัติการช่างยนต์และเครื่องกล</li>
+                    <li>ห้องปฏิบัติการช่างไฟฟ้ากำลังและอิเล็กทรอนิกส์</li>
+                    <li>พื้นที่ฝึกปฏิบัติงานช่างเชื่อมและโลหะกิจ</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- รายละเอียดสถานที่ 3: ศูนย์สารสนเทศและคอมพิวเตอร์ -->
+        <div class="detail-card">
+            <div class="detail-img-container">
+                <img src="https://scontent.fnak4-1.fna.fbcdn.net/v/t39.30808-6/704570560_122182060916866918_7663074969771919284_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1367&ctp=s2048x1367&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=f727a1&_nc_ohc=hy6fYBYsimAQ7kNvwFs3i_T&_nc_oc=Adqu4vQd85gS5MgQgmZ8ANog-tHTjydyjyn6aQT6dv2kNCngtem5tlQ2VJHNUbzwZHuIlMUXScLa6xcEzJoCfje0&_nc_zt=23&_nc_ht=scontent.fnak4-1.fna&_nc_gid=DY9PoHtjK17UhU4wbS03Jg&_nc_ss=7b2a8&oh=00_AQSe53R8bek37m37Q4DMce5_7VuIX1Jl4nLCn2XuKqBofw&oe=6AEF28C9" alt="ศูนย์สารสนเทศและคอมพิวเตอร์">
+            </div>
+            <div class="detail-content">
+                <div class="detail-title">💻 ศูนย์สารสนเทศและคอมพิวเตอร์</div>
+                <div class="detail-desc">ห้องปฏิบัติการคอมพิวเตอร์ที่ทันสมัย รองรับการเรียนการสอนด้านเทคโนโลยีดิจิทัลและเครือข่ายคอมพิวเตอร์</div>
+                <ul class="detail-features">
+                    <li>เครื่องคอมพิวเตอร์สเปคสูงพร้อมใช้งาน</li>
+                    <li>ระบบอินเทอร์เน็ตความเร็วสูง</li>
+                    <li>ซอฟต์แวร์และโปรแกรมเฉพาะทางด้านวิชาชีพ</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- ปุ่มกลับหน้าหลัก -->
+        <a href="index.html" class="btn-back">← กลับหน้าหลัก</a>
+
+        <footer>
+            © 2026 วิทยาลัยเทคนิคนางรอง. All Rights Reserved.
+        </footer>
+    </div>
+
+</body>
+</html>

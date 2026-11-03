@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สิ่งอำนวยความสะดวก | วิทยาลัยเทคนิคนางรอง</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-section {
+            border-bottom: 3px solid #553c9a;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-mini {
+            width: 70px;
+            height: 70px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-mini img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        h1 {
+            color: #553c9a;
+            font-size: 26px;
+        }
+
+        .sub-title {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .facilities-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .facility-card {
+            background-color: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+            transition: transform 0.3s ease;
+        }
+
+        .facility-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .facility-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .facility-content {
+            padding: 20px;
+        }
+
+        .facility-title {
+            color: #44337a;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .facility-desc {
+            color: #4a4a4a;
+            font-size: 14px;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 25px;
+            background-color: #e2e8f0;
+            color: #4a5568;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background-color: #cbd5e0;
+            color: #2d3748;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 12px;
+            color: #aaa;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!-- แถบหัวข้อ -->
+        <div class="header-section">
+            <div class="logo-mini">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_nR5vBBsTgKDXU-VNLayUCcW9TztNtQp5z2lFX4YnVeroA=s900-c-k-c0x00ffffff-no-rj" alt="โลโก้วิทยาลัยเทคนิคนางรอง">
+            </div>
+            <div>
+                <h1>สิ่งอำนวยความสะดวก</h1>
+                <div class="sub-title">วิทยาลัยเทคนิคนางรอง | อาคารสถานที่และเครื่องมือปฏิบัติงาน</div>
+            </div>
+        </div>
+
+        <!-- รายการสิ่งอำนวยความสะดวก (Grid) -->
+        <div class="facilities-grid">
+            <!-- อาคารปฏิบัติการและโรงงานวิชาชีพ -->
+            <div class="facility-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwg0DVNEhtQpG1xi8JVmGXbgPSbaHSnzsoGKjodXQdxQ&s=10" alt="โรงฝึกงานและอาคารปฏิบัติการ" class="facility-img">
+                <div class="facility-content">
+                    <div class="facility-title">🏢 อาคารปฏิบัติการและโรงฝึกงาน</div>
+                    <div class="facility-desc">อาคารและโรงงานอุตสาหกรรมเฉพาะทางสำหรับฝึกปฏิบัติจริง เพียบพร้อมด้วยเครื่องมือและจักรกลมาตรฐานอุตสาหกรรม</div>
+                </div>
+            </div>
+
+            <!-- ศูนย์สารสนเทศและห้องปฏิบัติการคอมพิวเตอร์ -->
+            <div class="facility-card">
+                <img src="https://scontent.fnak4-1.fna.fbcdn.net/v/t39.30808-6/704570560_122182060916866918_7663074969771919284_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1367&ctp=s2048x1367&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=f727a1&_nc_ohc=hy6fYBYsimAQ7kNvwFs3i_T&_nc_oc=Adqu4vQd85gS5MgQgmZ8ANog-tHTjydyjyn6aQT6dv2kNCngtem5tlQ2VJHNUbzwZHuIlMUXScLa6xcEzJoCfje0&_nc_zt=23&_nc_ht=scontent.fnak4-1.fna&_nc_gid=DY9PoHtjK17UhU4wbS03Jg&_nc_ss=7b2a8&oh=00_AQSe53R8bek37m37Q4DMce5_7VuIX1Jl4nLCn2XuKqBofw&oe=6AEF28C9" alt="ห้องปฏิบัติการคอมพิวเตอร์" class="facility-img">
+                <div class="facility-content">
+                    <div class="facility-title">💻 ห้องปฏิบัติการคอมพิวเตอร์</div>
+                    <div class="facility-desc">ห้องคอมพิวเตอร์พร้อมอินเทอร์เน็ตความเร็วสูงและซอฟต์แวร์ทันสมัย รองรับการเรียนการสอนด้านเทคโนโลยีและดิจิทัล</div>
+                </div>
+            </div>
+
+            <!-- ห้องประชุม (เปลี่ยนใหม่ตามต้องการ) -->
+            <div class="facility-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbjHxAlhRLXXZ5tSpScUHQn-ik8ry1bSFVlZH4p0soB3cYU3HS_dgJQeY&s=10" alt="ห้องประชุมวิทยาลัย" class="facility-img">
+                <div class="facility-content">
+                    <div class="facility-title">🏛️ ห้องประชุม</div>
+                    <div class="facility-desc">ห้องประชุมปรับอากาศขนาดใหญ่พร้อมระบบเครื่องเสียงและโสตทัศนูปกรณ์ที่ทันสมัย รองรับการจัดประชุมสัมมนาและพิธีการต่างๆ</div>
+                </div>
+            </div>
+
+            <!-- โดมเอนกประสงค์ -->
+            <div class="facility-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLVCaGbga3BRYsOybFN7p65tGXa2SK9gOd1R3Ew4IpuEYZYrVyNYTO524&s=10" alt="โดมเอนกประสงค์วิทยาลัย" class="facility-img">
+                <div class="facility-content">
+                    <div class="facility-title">🎪 โดมเอนกประสงค์</div>
+                    <div class="facility-desc">พื้นที่ร่มเอนกประสงค์สำหรับจัดกิจกรรมกลางแจ้ง การประชุม ปฐมนิเทศ และกิจกรรมเสริมหลักสูตรต่างๆ ของนักศึกษา</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ปุ่มกลับหน้าหลัก -->
+        <a href="index.html" class="btn-back">← กลับหน้าหลัก</a>
+
+        <footer>
+            © 2026 วิทยาลัยเทคนิคนางรอง. All Rights Reserved.
+        </footer>
+    </div>
+
+</body>
+</html>

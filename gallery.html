@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | วิทยาลัยเทคนิคนางรอง</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-section {
+            border-bottom: 3px solid #e11d48;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-mini {
+            width: 70px;
+            height: 70px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-mini img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        h1 {
+            color: #e11d48;
+            font-size: 26px;
+        }
+
+        .sub-title {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* จัดกริดรูปภาพแสดงผล 2 คอลัมน์ */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .gallery-card {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-img-container {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-card:hover .gallery-img-container img {
+            transform: scale(1.05);
+        }
+
+        .gallery-content {
+            padding: 15px;
+        }
+
+        .gallery-title {
+            color: #be123c;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .gallery-desc {
+            color: #6c757d;
+            font-size: 13px;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 25px;
+            background-color: #e2e8f0;
+            color: #4a5568;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background-color: #cbd5e0;
+            color: #2d3748;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 12px;
+            color: #aaa;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!-- แถบหัวข้อ -->
+        <div class="header-section">
+            <div class="logo-mini">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_nR5vBBsTgKDXU-VNLayUCcW9TztNtQp5z2lFX4YnVeroA=s900-c-k-c0x00ffffff-no-rj" alt="โลโก้วิทยาลัยเทคนิคนางรอง">
+            </div>
+            <div>
+                <h1>Gallery ภาพกิจกรรม</h1>
+                <div class="sub-title">วิทยาลัยเทคนิคนางรอง | ประมวลภาพบรรยากาศ กิจกรรม และสถานที่ภายในวิทยาลัย</div>
+            </div>
+        </div>
+
+        <!-- รายการรูปภาพ Gallery 8 รูป -->
+        <div class="gallery-grid">
+            <!-- รูปที่ 1 -->
+            <div class="gallery-card">
+                <div class="gallery-img-container">
+                    <img src="https://scontent.fnak4-2.fna.fbcdn.net/v/t39.30808-6/882067221_1587895456472269_3948587920309918950_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=f727a1&_nc_ohc=y1vVuLzg5tgQ7kNvwFOYx-M&_nc_oc=AdpN6w-bX7a3jjp6Hbwzrzwb-QPw6JnvRFQ4ur-8wU1DmFWuUFy0oV33RYcYMhoelReIv1n5D4q7wS5v4gSwHpbG&_nc_zt=23&_nc_ht=scontent.fnak4-2.fna&_nc_gid=DB41DyfS8_obqf6cUUVumA&_nc_ss=7b2a8&oh=00_AQR2BRhqRx-WJ-NwiAQ5fmPgJx1LSE1Vrm6Hbhr_zS01Wg&oe=6AEF3247" alt="กิจกรรมและการเรียนการสอนภายในวิทยาลัย">
+                </div>
+                <div class="gallery-content">
+                    <div class="gallery-title">🎓 บรรยากาศกิจกรรมภายในวิทยาลัย</div>
+                    <div class="gallery-desc">ภาพความประทับใจและกิจกรรมสร้างสรรค์ของคณะผู้บริหาร ครู และนักเรียน นักศึกษา</div>
+                </div>
+            </div>
+
+            <!-- รูปที่ 2 -->
+            <div class="gallery-card">
+                <div class="gallery-img-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRCXZQho1eDjHvFFDUd2VUjR4Krc4-t87E-j3DEDiq19xkSbMVh9oiZlc&s=10" alt="รับสมัครนักศึกษาใหม่">
+                </div>
+                <div class="gallery-content">
+                    <div class="gallery-title">📢 บรรยากาศการรับสมัครนักศึกษา</div>
+                    <div class="gallery-desc">ภาพบรรยากาศการประชาสัมพันธ์และต้อนรับน้องๆ นักเรียนใหม่ที่เข้ามาสมัครเรียน</div>
+                </div>
+            </div>
+
+            <!-- รูปที่ 3 -->
+            <div class="gallery-card">
+                <div class="gallery-img-container">
+                    <img src="https://scontent.fnak4-1.fna.fbcdn.net/v/t39.30808-6/704570560_122182060916866918_7663074969771919284_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1367&ctp=s2048x1367&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=f727a1&_nc_ohc=hy6fYBYsimAQ7kNvwFs3i_T&_nc_oc=Adqu4vQd85gS5MgQgmZ8ANog-tHTjydyjyn6aQT6dv2kNCngtem5tlQ2VJHNUbzwZHuIlMUXScLa6xcEzJoCfje0&_nc_zt=23&_nc_ht=scontent.fnak4-1.fna&_nc_gid=DY9PoHtjK17UhU4wbS03Jg&_nc_ss=7b2a8&oh=00_AQSe53R8bek37m37Q4DMce5_7VuIX1Jl4nLCn2XuKqBofw&oe=6AEF28C9" alt="ห้องปฏิบัติการคอมพิวเตอร์">
+                </div>
+                <div class="gallery-content">
+                    <div class="gallery-title">💻 ห้องปฏิบัติการคอมพิวเตอร์</div>
+                    <div class="gallery-desc">นักศึกษากำลังฝึกปฏิบัติงานในห้องคอมพิวเตอร์ที่พร้อมสรรพด้วยอุปกรณ์ทันสมัย</div>
+                </div>
+            </div>
+
+            <!-- รูปที่ 4 -->
+            <div class="gallery-card">
+                <div class="gallery-img-container">
+                    <img src="https://scontent.fnak4-1.fna.fbcdn.net/v/t39.30808-6/651172070_1245967631071248_3697014624423831534_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1536&ctp=s2048x1536&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Nf0rDHHNW-cQ7kNvwHGDtGu&_nc_oc=Ado0bNLM3oQmiZkzpDXelyjPrwiVl_WBWJ57scNSeyTZFLRZFJkyQ7oFr5TOoMcNHG_h02uG6Kdfa87gTjQuMOPm&_nc_zt=23&_nc_ht=scontent.fnak4-1.fna&_nc_gid=9Ud5x6HafiJLLu5CqIVyAQ&_nc_ss=7b2a8&oh=00_AQRbnFZJvcCf0ddnGDMTNtm6z2bi91Wy1O2Abm4jUufO1Q&oe=6AEF2955" alt="โรงฝึกงานช่างอุตสาหกรรม">
+                </div>
+                <div class="gallery-content">
+                    <div class="gallery-title">⚙️ โรงฝึกงานช่างอุตสาหกรรม</div>
+                    <div class="gallery-desc">การเรียนการสอนภาคปฏิบัติงานช่างด้วยเครื่องมือและเครื่องจักรมาตรฐาน</div>
+                </div>
+            </div>
+
+            <!-- รูปที่ 5 -->
+            <div class="gallery-card">
+                <div class="gallery-img-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLVCaGbga3BRYsOybFN7p65tGXa2SK9gOd1R3Ew4IpuEYZYrVyNYTO524&s=10" alt="โดมเอนกประสงค์">
+                </div>
+                <div class="gallery-content">
+                    <div class="gallery-title">🎪 โดมเอนกประสงค์</div>
+                    <div class="gallery-desc">ลานกิจกรรมร่มเอนกประสงค์สำหรับจัดกิจกรรมหน้าเสาธงและการประชุมร่วมกัน</div>
+                </div>
+            </div>
+
+            <!-- รูปที่ 6 -->
+            <div class="gallery-card">
+                <div class="gallery-img-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbjHxAlhRLXXZ5tSpScUHQn-ik8ry1bSFVlZH4p0soB3cYU3HS_dgJQeY&s=10" alt="ห้องประชุม">
+                </div>
+                <div class="gallery-content">
+                    <div class="gallery-title">🏛️ ห้องประชุมสัมมนา</div>
+                    <div class="gallery-desc">ห้องประชุมปรับอากาศสำหรับจัดประชุม อบรม และพิธีการสำคัญต่างๆ</div>
+                </div>
+            </div>
+
+            <!-- รูปที่ 7 (ใส่รูปใหม่ที่คุณส่งมา พร้อมปรับเนื้อหาให้เข้ากัน) -->
+            <div class="gallery-card">
+                <div class="gallery-img-container">
+                    <img src="https://scontent.fnak4-2.fna.fbcdn.net/v/t39.99422-6/866610177_1116700287431820_4170782126956860231_n.png?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s590x590&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=f727a1&_nc_ohc=holkfL9TlrEQ7kNvwFDExcr&_nc_oc=AdqO5YuSan8e2MSNwB86NaXwhkjsJjnHOziS_Tpz1vqzDTd3zdI1o9FmxITCOmLz7gTfclx6wDdiHhoA__hzVl8m&_nc_zt=14&_nc_ht=scontent.fnak4-2.fna&_nc_gid=8PJHa90fmEgjSEtC6jEOOA&_nc_ss=7b2a8&oh=00_AQSpiHXVzHoVi71YHfL_TZYawvMd7NEXO75KT78Fl-lCXg&oe=6AEF0D3A" alt="กิจกรรมพิเศษหรือผลงานนักศึกษา">
+                </div>
+                <div class="gallery-content">
+                    <div class="gallery-title">🏆 กิจกรรมและผลงานนักศึกษา</div>
+                    <div class="gallery-desc">ภาพบรรยากาศการเข้าร่วมกิจกรรมพิเศษ โครงงาน หรือการแสดงผลงานนวัตกรรมของนักศึกษา</div>
+                </div>
+            </div>
+
+            <!-- รูปที่ 8 -->
+            <div class="gallery-card">
+                <div class="gallery-img-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7EriJQFvkNV3vogUbG72-tK-CccyYKRcDemjebbZBSq6u4eXZxJL5W_g&s=10" alt="บรรยากาศภายในวิทยาลัย">
+                </div>
+                <div class="gallery-content">
+                    <div class="gallery-title">🌳 บรรยากาศภายในวิทยาลัย</div>
+                    <div class="gallery-desc">สภาพแวดล้อม ร่มรื่น เอื้อต่อการเรียนรู้และพัฒนาทักษะวิชาชีพ</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ปุ่มกลับหน้าหลัก -->
+        <a href="index.html" class="btn-back">← กลับหน้าหลัก</a>
+
+        <footer>
+            © 2026 วิทยาลัยเทคนิคนางรอง. All Rights Reserved.
+        </footer>
+    </div>
+
+</body>
+</html>

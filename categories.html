@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หมวดหมู่สถานที่ | วิทยาลัยเทคนิคนางรอง</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .header-section {
+            border-bottom: 3px solid #dd6b20;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-mini {
+            width: 70px;
+            height: 70px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-mini img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        h1 {
+            color: #dd6b20;
+            font-size: 26px;
+        }
+
+        .sub-title {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .category-section {
+            margin-bottom: 30px;
+        }
+
+        .category-header {
+            background-color: #fffaf0;
+            border-left: 4px solid #dd6b20;
+            padding: 12px 18px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .category-header h3 {
+            color: #c05621;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .location-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .location-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .location-item {
+            background-color: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .location-item:hover {
+            border-color: #cbd5e0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+            transform: translateY(-2px);
+        }
+
+        .location-name {
+            font-weight: bold;
+            color: #2d3748;
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .location-desc {
+            font-size: 13px;
+            color: #718096;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 25px;
+            background-color: #e2e8f0;
+            color: #4a5568;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background-color: #cbd5e0;
+            color: #2d3748;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 12px;
+            color: #aaa;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!-- แถบหัวข้อ -->
+        <div class="header-section">
+            <div class="logo-mini">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_nR5vBBsTgKDXU-VNLayUCcW9TztNtQp5z2lFX4YnVeroA=s900-c-k-c0x00ffffff-no-rj" alt="โลโก้วิทยาลัยเทคนิคนางรอง">
+            </div>
+            <div>
+                <h1>หมวดหมู่สถานที่</h1>
+                <div class="sub-title">วิทยาลัยเทคนิคนางรอง | แบ่งกลุ่มอาคารและแผนกตามหมวดหมู่</div>
+            </div>
+        </div>
+
+        <!-- หมวดหมู่ที่ 1: อาคารบริหารและบริการการศึกษา -->
+        <div class="category-section">
+            <div class="category-header">
+                <h3>🏛️ หมวดอาคารบริหารและบริการนักเรียน นักศึกษา</h3>
+            </div>
+            <div class="location-list">
+                <div class="location-item">
+                    <div class="location-name">🏢 อาคารอำนวยการ</div>
+                    <div class="location-desc">ที่ตั้งของฝ่ายบริหาร, งานทะเบียน, งานการเงิน และงานประชาสัมพันธ์</div>
+                </div>
+                <div class="location-item">
+                    <div class="location-name">🏛️ ห้องประชุมใหญ่ / หอประชุม</div>
+                    <div class="location-desc">สถานที่จัดพิธีการ สัมมนา ปฐมนิเทศ และกิจกรรมอบรมทางวิชาการ</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- หมวดหมู่ที่ 2: อาคารเรียนปฏิบัติการและแผนกวิชา -->
+        <div class="category-section">
+            <div class="category-header">
+                <h3>🛠️ หมวดอาคารเรียนปฏิบัติการและแผนกวิชา</h3>
+            </div>
+            <div class="location-list">
+                <div class="location-item">
+                    <div class="location-name">🔧 อาคารช่างอุตสาหกรรม</div>
+                    <div class="location-desc">โรงฝึกงานแผนกช่างยนต์, ช่างไฟฟ้ากำลัง, ช่างอิเล็กทรอนิกส์ และช่างเชื่อม</div>
+                </div>
+                <div class="location-item">
+                    <div class="location-name">💻 ศูนย์สารสนเทศและคอมพิวเตอร์</div>
+                    <div class="location-desc">ห้องปฏิบัติการคอมพิวเตอร์และแผนกเทคโนโลยีสารสนเทศ/คอมพิวเตอร์ธุรกิจ</div>
+                </div>
+                <div class="location-item">
+                    <div class="location-name">💼 อาคารบริหารธุรกิจและพาณิชยกรรม</div>
+                    <div class="location-desc">ห้องเรียนและห้องปฏิบัติการแผนกการบัญชี, การตลาด และการจัดการ</div>
+                </div>
+                <div class="location-item">
+                    <div class="location-name">🏗️ อาคารช่างก่อสร้างและโยธา</div>
+                    <div class="location-desc">พื้นที่ฝึกปฏิบัติงานช่างก่อสร้าง สำรวจ และสถาปัตยกรรม</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- หมวดหมู่ที่ 3: อาคารกิจกรรมและสวัสดิการ -->
+        <div class="category-section">
+            <div class="category-header">
+                <h3>🎪 หมวดกิจกรรม สวัสดิการ และนันทนาการ</h3>
+            </div>
+            <div class="location-list">
+                <div class="location-item">
+                    <div class="location-name">🎪 โดมเอนกประสงค์</div>
+                    <div class="location-desc">พื้นที่เข้าแถวเคารพธงชาติ กีฬาในร่ม และกิจกรรมกลางแจ้งของวิทยาลัย</div>
+                </div>
+                <div class="location-item">
+                    <div class="location-name">🍽️ โรงอาหารวิทยาลัย</div>
+                    <div class="location-desc">ศูนย์จำหน่ายอาหาร เครื่องดื่ม และพื้นที่พักผ่อนของนักศึกษาและบุคลากร</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ปุ่มกลับหน้าหลัก -->
+        <a href="index.html" class="btn-back">← กลับหน้าหลัก</a>
+
+        <footer>
+            © 2026 วิทยาลัยเทคนิคนางรอง. All Rights Reserved.
+        </footer>
+    </div>
+
+</body>
+</html>

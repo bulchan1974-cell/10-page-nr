@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แผนกวิชาที่เปิดสอน | วิทยาลัยเทคนิคนางรอง</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Sarabun', sans-serif;
+        }
+        body {
+            background-color: #f4f6f9;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .container-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            max-width: 950px;
+            width: 100%;
+        }
+        .header-section {
+            text-align: center;
+            margin-bottom: 35px;
+            position: relative;
+        }
+        .back-btn {
+            position: absolute;
+            left: 0;
+            top: 5px;
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: color 0.2s;
+        }
+        .back-btn:hover {
+            color: #800000;
+        }
+        h1 {
+            color: #800000;
+            font-size: 26px;
+            font-weight: 700;
+        }
+        .subtitle {
+            color: #d69e2e;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .grid-levels {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        @media (max-width: 768px) {
+            .grid-levels {
+                grid-template-columns: 1fr;
+            }
+            .back-btn {
+                position: static;
+                margin-bottom: 15px;
+                justify-content: center;
+            }
+        }
+        .level-box {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+            border: 1px solid #e2e8f0;
+        }
+        .level-header {
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .bg-pvc {
+            background-color: #e53e3e; /* สีชมพู/แดง ตามประกาศ ปวช. */
+        }
+        .bg-pvs {
+            background-color: #2b6cb0; /* สีน้ำเงิน ตามประกาศ ปวส. */
+        }
+        .level-subheader {
+            background-color: #edf2f7;
+            padding: 8px;
+            text-align: center;
+            font-size: 13px;
+            color: #4a5568;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .dept-list {
+            list-style: none;
+            padding: 10px 0;
+            background: #fff;
+        }
+        .dept-item {
+            padding: 12px 20px;
+            border-bottom: 1px solid #f7fafc;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #2d3748;
+            font-size: 15px;
+            transition: background 0.2s;
+        }
+        .dept-item:last-child {
+            border-bottom: none;
+        }
+        .dept-item:hover {
+            background-color: #f7fafc;
+        }
+        .bullet {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .bullet-pvc { background-color: #e53e3e; }
+        .bullet-pvs { background-color: #2b6cb0; }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 12px;
+            color: #a0aec0;
+            border-top: 1px solid #edf2f7;
+            padding-top: 20px;
+            width: 100%;
+        }
+    </style>
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+    <div class="container-card">
+        <div class="header-section">
+            <a href="index.html" class="back-btn">⬅️ กลับหน้าหลัก</a>
+            <h1>แผนกวิชาที่เปิดสอน</h1>
+            <div class="subtitle">วิทยาลัยเทคนิคนางรอง</div>
+        </div>
+
+        <div class="grid-levels">
+            <!-- ระดับ ปวช. -->
+            <div class="level-box">
+                <div class="level-header bg-pvc">ระดับ ปวช.</div>
+                <div class="level-subheader">หลักสูตรประกาศนียบัตรวิชาชีพ</div>
+                <ul class="dept-list">
+                    <li class="dept-item"><span class="bullet bullet-pvc"></span> สาขาวิชาช่างยนต์</li>
+                    <li class="dept-item"><span class="bullet bullet-pvc"></span> สาขาวิชาช่างกลโรงงาน</li>
+                    <li class="dept-item"><span class="bullet bullet-pvc"></span> สาขาวิชาช่างเชื่อมโลหะ</li>
+                    <li class="dept-item"><span class="bullet bullet-pvc"></span> สาขาวิชาช่างไฟฟ้ากำลัง</li>
+                    <li class="dept-item"><span class="bullet bullet-pvc"></span> สาขาวิชาช่างอิเล็กทรอนิกส์</li>
+                    <li class="dept-item"><span class="bullet bullet-pvc"></span> สาขาวิชาโยธา</li>
+                    <li class="dept-item"><span class="bullet bullet-pvc"></span> สาขาวิชาการบัญชี</li>
+                    <li class="dept-item"><span class="bullet bullet-pvc"></span> สาขาวิชาการตลาด</li>
+                    <li class="dept-item"><span class="bullet bullet-pvc"></span> สาขาวิชาการโรงแรม</li>
+                    <li class="dept-item"><span class="bullet bullet-pvc"></span> สาขาวิชาคอมพิวเตอร์กราฟิก</li>
+                    <li class="dept-item"><span class="bullet bullet-pvc"></span> สาขาวิชาเทคโนโลยีธุรกิจดิจิทัล</li>
+                </ul>
+            </div>
+
+            <!-- ระดับ ปวส. -->
+            <div class="level-box">
+                <div class="level-header bg-pvs">ระดับ ปวส.</div>
+                <div class="level-subheader">หลักสูตรประกาศนียบัตรวิชาชีพชั้นสูง</div>
+                <ul class="dept-list">
+                    <li class="dept-item"><span class="bullet bullet-pvs"></span> สาขาวิชาเทคนิคเครื่องกล</li>
+                    <li class="dept-item"><span class="bullet bullet-pvs"></span> สาขาวิชาเทคนิคเครื่องกลเกษตร</li>
+                    <li class="dept-item"><span class="bullet bullet-pvs"></span> สาขาวิชาเทคนิคการผลิต</li>
+                    <li class="dept-item"><span class="bullet bullet-pvs"></span> สาขาวิชาเทคนิคโลหะ</li>
+                    <li class="dept-item"><span class="bullet bullet-pvs"></span> สาขาวิชาไฟฟ้า</li>
+                    <li class="dept-item"><span class="bullet bullet-pvs"></span> สาขาวิชาเทคโนโลยีอิเล็กทรอนิกส์</li>
+                    <li class="dept-item"><span class="bullet bullet-pvs"></span> สาขาวิชาโยธา</li>
+                    <li class="dept-item"><span class="bullet bullet-pvs"></span> สาขาวิชาการบัญชี</li>
+                    <li class="dept-item"><span class="bullet bullet-pvs"></span> สาขาวิชาการตลาด</li>
+                    <li class="dept-item"><span class="bullet bullet-pvs"></span> สาขาวิชาการจัดการธุรกิจค้าปลีก</li>
+                    <li class="dept-item"><span class="bullet bullet-pvs"></span> สาขาวิชาการโรงแรม</li>
+                    <li class="dept-item"><span class="bullet bullet-pvs"></span> สาขาวิชาเทคโนโลยีสารสนเทศ</li>
+                    <li class="dept-item"><span class="bullet bullet-pvs"></span> สาขาวิชาเทคโนโลยีธุรกิจดิจิทัล</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            © 2026 วิทยาลัยเทคนิคนางรอง. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>
